@@ -42,7 +42,7 @@ public class Utility {
 			
 			if(browsername.equalsIgnoreCase("chrome"))
 			{
-				System.setProperty("webdriver.chrome.driver","C:\\Users\\meets\\Desktop\\MoneyHopAutomatedTestSuite\\src\\main\\resources\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","./src/main/resources/chromedriver.exe");
 				driver= new ChromeDriver();
 			}
 			
@@ -70,7 +70,7 @@ public class Utility {
 			prop = new Properties();
 			
 			try {
-				FileInputStream file = new FileInputStream("C:\\Users\\meets\\Desktop\\MoneyHopAutomatedTestSuite\\src\\test\\resources\\Test.properties");
+				FileInputStream file = new FileInputStream("./src/test/resources/Test.properties");
 				prop.load(file);
 			}
 			catch(Exception e)
